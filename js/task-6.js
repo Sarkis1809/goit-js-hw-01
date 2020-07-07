@@ -3,12 +3,8 @@
 let input = prompt("Please, enter some number");
 let total = 0;
 
-for (let i = 0; (i += 1); ) {
+do {
   total += Number(input);
   input = prompt("Please, enter some number");
-
-  if (input === null) {
-    alert(`Общая сумма чисел равна ${total}`);
-    break;
-  }
-}
+} while (input != null);
+alert(`Общая сумма чисел равна ${total}`);
